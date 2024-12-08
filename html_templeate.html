@@ -1,0 +1,17 @@
+<div style="background-color: #f3f8ff; padding: 20px;">
+    <h2 style="text-align: center; color: #333;">Productos</h2>
+    <div class="productos-container">
+        <div class="producto-card" ng-repeat="producto in productos">
+            <img 
+                ng-if="producto.Foto" 
+                ng-src="{{'data:image/jpeg;base64,' + producto.Foto}}" 
+                alt="{{producto.Nombre}}" 
+                class="producto-imagen" 
+            />
+            <p ng-if="!producto.Foto" class="sin-imagen">Imagen no disponible</p>
+            <h3>{{producto.Nombre}}</h3>
+            <p>{{producto.Descripcion}}</p>
+            <p>Precio: <span style="color: #007BFF; font-weight: bold;">${{producto.Precio}}</span></p>
+        </div>
+    </div>
+</div>

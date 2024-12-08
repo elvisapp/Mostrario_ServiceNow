@@ -1,0 +1,82 @@
+/* Fondo general de la página */
+body {
+    background-color: #f3f8ff; /* Azul muy claro */
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+.productos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* Espacio entre tarjetas */
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Tarjeta de producto */
+.producto-card {
+    border-radius: 16px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    background: #ffffff;
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.1), 
+                -6px -6px 12px rgba(255, 255, 255, 0.7);
+    transition: transform 0.2s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Efecto hover para tarjetas */
+.producto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2), 
+                -10px -10px 20px rgba(255, 255, 255, 0.8);
+}
+
+/* Título del producto */
+.producto-card h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Descripción del producto */
+.producto-card p {
+    font-size: 16px;
+    color: #666;
+    margin: 5px 0;
+}
+
+/* Precio del producto */
+.producto-card p:last-child {
+    font-weight: bold;
+    color: #007BFF; /* Azul vibrante */
+}
+
+/* Imagen del producto */
+.producto-imagen {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin: 15px 0;
+}
+
+/* Texto para productos sin imagen */
+.sin-imagen {
+    color: #ff4d4f; /* Rojo brillante */
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .producto-card {
+        width: 90%; /* Se ajusta al ancho de la pantalla */
+    }
+}
