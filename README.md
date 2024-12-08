@@ -34,7 +34,7 @@ Consumo de una API REST para mostrar productos.
 
 Gestión de base de datos con MySQL.
 
-<img src="[https://i.imgur.com/8KAiiMW.jpg](https://github.com/user-attachments/assets/42c8c7af-1af9-4bf6-9d3b-bb84032e3417)">
+<img src="https://github.com/user-attachments/assets/42c8c7af-1af9-4bf6-9d3b-bb84032e3417">
 
 
 
